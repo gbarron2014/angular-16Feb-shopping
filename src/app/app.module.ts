@@ -7,11 +7,14 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ProductComponent } from './product/product.component';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    CardModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ])
@@ -20,8 +23,8 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductAlertsComponent
-  ],
+    ProductAlertsComponent,
+    ProductComponent  ],
   bootstrap: [
     AppComponent
   ]
